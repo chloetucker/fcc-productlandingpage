@@ -1,0 +1,391 @@
+/** global element styling **/
+
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css?family=Arvo:700&display=swap');
+
+/* Global settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 2.7em;
+}
+
+h2 {
+    font-family: 'Arvo', sans-serif;
+}
+
+.subtitle {
+    margin: 10px 0px 10px 0px;
+    padding: 20px 20px 20px 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-family: 'Arvo', sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+}
+
+/* Section-specific settings below - organized from top to bottom of page */
+
+/* Header/nav bar settings */
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 3000px;
+    top: 0;
+    min-height: 70px;
+    max-height: 90px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(228, 228, 228, .8);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    width: 60vw;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 15px 0px 15px 0px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+    .logo > img {
+        margin: 0 auto;
+    }
+}
+
+nav {
+    font-family: 'Arvo', sans-serif;
+}
+
+@media (max-width: 650px) {
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+    }
+
+    nav li {
+        padding-bottom: 5px;
+    }
+}
+
+nav > ul {
+    width: 35vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+    nav > ul {
+        flex-direction: column;
+    }
+}
+
+nav > ul :hover {
+    color: #FF416B;
+    transition: background-color 1s;
+}
+
+/* "Play Fine Stay In Time" intro section settings */
+
+#intro {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    padding: 100px 0px 100px 0px;
+    margin-top: 200px 0px 100px 0px;
+}
+
+/* Features section settings */
+
+#features {
+    margin-top: 30px;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #25B79F;
+}
+
+@media (max-width: 550px) {
+    #features .icon {
+        display: none;
+    }
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+@media (max-width: 550px) {
+    #features .desc {
+        width: 100%;
+        text-align: center;
+        height: 150px;
+    }
+}
+
+@media (max-width: 650px) {
+    #features {
+        margin-top: 0;
+    }
+}
+
+/* Pricing/products section settings */
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0px 0px 5px #a9a9a9;
+}
+
+.product > .level {
+    background-color: transparent;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.product > h2 {
+    margin: 15px 0px 30px 0px;
+    font-family: 'Arvo', sans-serif;
+}
+
+.product > ol {
+    margin: 15px;
+    text-align: left;
+}
+
+.product > ol > li {
+    padding: 5px 0;
+    list-style-type: square;
+}
+
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #ADFB9D;
+}
+
+.product > button:hover {
+    background-color: #25B79F;
+    transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+    }
+
+    .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+/* Video section settings */
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    margin: 50px 10px 10px 10px;
+}
+
+.video > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+/* Get Started/email input section settings */
+
+#get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.get-started > h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#get-started input[type="email"] {
+    max-width: 250px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+#get-started input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+}
+
+#get-started input[type="submit"]:hover {
+    background-color: #FF416B;
+}
+
+/* App store section settings */
+
+#app-store {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+#app-store-img {
+    width: 100%;
+    max-width: 220px;
+    min-width: 50px;
+    height: auto;
+}
+
+/* Footer section settings */
+
+footer {
+    width: 3000px;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1em;
+    padding: 20px;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+footer > ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+footer > span {
+    display: flex;
+    justify-content: center;
+}
+
+footer > img {
+    width: 80px;
+}
