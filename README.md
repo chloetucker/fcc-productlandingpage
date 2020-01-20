@@ -17,6 +17,9 @@ This project involved several tasks.
 - For the app store icons, link to the actual app stores
 - Add a display message when users submit their email address
 - Testing responsiveness on phones, tablets, and different size screens.
+- Add html {scroll-behavior: smooth;} to CSS
+- Top of content is hidden under the navbar when user selects “Features” or “Pricing”. Add padding/margin equal to the height of the navbar.
+- Fix nav so when viewport is small, the nav menu options stay in the nav bar div
 
 ## Reach Out
 - <a href="https://chloe.dev/" target="_blank">`Website - chloe.dev`</a>
