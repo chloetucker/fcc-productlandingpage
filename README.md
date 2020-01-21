@@ -20,6 +20,9 @@ This project involved several tasks.
 - Add html {scroll-behavior: smooth;} to CSS
 - Top of content is hidden under the navbar when user selects “Features” or “Pricing”. Add padding/margin equal to the height of the navbar.
 - Fix nav so when viewport is small, the nav menu options stay in the nav bar div
+- Review Lighthouse report (Google Chrome extension) for accessibility and best practices
+- Avoid styling raw elements; style classes or divs only. Also limit stylings in universal and body tags. 
+- Add code comments for section ends
 
 ## Reach Out
 - <a href="https://chloe.dev/" target="_blank">`Website - chloe.dev`</a>
